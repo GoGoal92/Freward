@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorPrimary2"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/shadoweffect"
+        android:textSize="24sp"
+        android:text="F Movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView2" />
+
+    <ImageView
+        android:src="@drawable/appicon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp" />
+
+
+    <ProgressBar
+        android:id="@+id/upload_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:progress="0"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:progressDrawable="@drawable/progress_design"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="73dp" />
+
+    <TextView
+        android:textSize="11sp"
+        android:text="Loading"
+        android:textColor="#FFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loading"
+        android:layout_alignTop="@+id/upload_progress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+</RelativeLayout>
