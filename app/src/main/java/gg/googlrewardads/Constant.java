@@ -29,13 +29,14 @@ public class Constant {
         ac=ac1;
         try {
 
-            PackageInfo info = ac.getPackageManager().getPackageInfo("gg.prodwreward", PackageManager.GET_SIGNATURES);
+            PackageInfo info = ac.getPackageManager().getPackageInfo("gg.googlrewardads", PackageManager.GET_SIGNATURES);
             for (android.content.pm.Signature signature : info.signatures) {
                 MessageDigest md = MessageDigest.getInstance("SHA");
                 md.update(signature.toByteArray());
                 String sign = Base64.encodeToString(md.digest(), Base64.DEFAULT);
                 apikey=sign;
 
+                Log.e("apikey",apikey);
               /*  String path = Environment.getExternalStorageDirectory() + "/asd/";
                 File root = new File(path);
                 File gpxfile = new File(root, "samples.txt");

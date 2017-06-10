@@ -39,7 +39,7 @@ public class Main extends AppCompatActivity {
   //  static int[] degree = new int[]{315, 135, 225, 90, 270,45, 180, 0};
    // static String[] price = new String[]{"300","500","700","800","X 2","X 4","1000","2000"};
 
-    static int[] degree = new int[]{45, 135, 225, 315, 90,180, 0, 315};
+    static int[] degree = new int[]{45, 135, 225, 315, 90,180, 0, 270};
     static String[] price = new String[]{"30 min","1 hr","3 hr","5 hr","12 hr","X 2","X 4","1 day"};
 
 
